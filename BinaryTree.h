@@ -65,6 +65,7 @@ class PokeTree
         void findType(string type);
         void findAbility(string ability);
         bool isValid();
+        void whatCountersType();
 
     protected:
 
