@@ -981,3 +981,71 @@ void PokeTree::printPokeAbilities(PokeNode * node){//Recursively traverse alphab
         printPokeAbilities(node->rightChild);
     }
 }
+void PokeTree::whatCountersType()
+{
+    string type;
+    cout<<"Enter a Type:";
+    cin>>type;
+    if(type == "normal")
+    {
+        cout<<"Counters: Fighting"<<endl;
+    }
+    else if(type == "fire")
+    {
+        cout<<"Counters: Water, Ground, and Rock"<<endl;
+    }
+    else if(type == "water")
+    {
+        cout<<"Counters: Electric and Grass"<<endl;
+    }
+    else if(type == "electric")
+    {
+        cout<<"Counters: Ground"<<endl;
+    }
+    else if(type == "grass")
+    {
+        cout<<"Counters: Fire, Ice, Poison, Flying, and Bug"<<endl;
+    }
+    else if(type == "ice")
+    {
+        cout<<"Counters: Fire, Fighting, and Rock"<<endl;
+    }
+    else if(type == "fighting")
+    {
+        cout<<"Counters: Flying and Psychic"<<endl;
+    }
+    else if(type == "poison")
+    {
+        cout<<"Counters: Ground, Psychic, and Bug"<<endl;
+    }
+    else if(type == "ground")
+    {
+        cout<<"Counters: Water, Grass, and Ice"<<endl;
+    }
+    else if(type == "flying")
+    {
+        cout<<"Counters: Electric, Ice, and Rock"<<endl;
+    }
+   else if(type == "psychic")
+    {
+        cout<<"Counters: Bug"<<endl;
+    }
+    else if(type == "bug")
+    {
+        cout<<"Counters: Fire, Poison, Flying, and Rock"<<endl;
+    }
+    else if(type == "rock")
+    {
+        cout<<"Counters: Water, Grass, Fighting, and Ground"<<endl;
+    }
+    else if(type == "ghost")
+    {
+        cout<<"Counters: Ghost"<<endl;
+    }
+    else if(type == "dragon")
+    {
+        cout<<"Counters: Ice and Dragon"<<endl;   
+    }
+
+    return;
+}
